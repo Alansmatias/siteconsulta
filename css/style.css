@@ -8147,7 +8147,7 @@ body {
       -ms-transform: translateX(0);
       -o-transform: translateX(0);
       transform: translateX(0);
-      width: 270px;
+      width: 300px;
       background: #fff;
       z-index: 999;
       position: fixed; }
@@ -8226,7 +8226,8 @@ h1, h2, h3, h4, h5,
       transition: none; } }
   @media (min-width: 1297px) {
     #colorlib-aside {
-      width: 20%; } }
+      width: 20%;
+      min-width: 20em; } }
   @media (max-width: 1296px) {
     #colorlib-aside {
       width: 270px;
@@ -8409,7 +8410,7 @@ h1, h2, h3, h4, h5,
 
 .colorlib-nav-toggle {
   position: fixed;
-  left: -12px;
+  left: -1px;
   top: 0px;
   z-index: 9999;
   cursor: pointer;
@@ -8428,5 +8429,4 @@ h1, h2, h3, h4, h5,
     .colorlib-nav-toggle {
       opacity: 1;
       visibility: visible; } }
-
 

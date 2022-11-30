@@ -16,9 +16,10 @@
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight bg-dark">
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li class="colorlib-active" style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-brands fa-pagelines"></i> Licenciamento</a></li>
-		    	<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-solid fa-bullhorn"></i> Denúncias Ambientais</a>
+					<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="?page=consultalicenca"><i class="fa-brands fa-pagelines"></i> Licenciamento</a></li>
+		    		<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-solid fa-bullhorn"></i> Denúncias Ambientais</a>
 					<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-solid fa-circle-info"></i> Info</a></li>
+					<li style="white-space: nowrap; font-size: 1.1em; margin-top: 20px;"><a class="text-light" href="?page=restrict"><i class="fa-solid fa-ban"></i> Acesso Restrito</a></li>
 
 
 
@@ -32,7 +33,22 @@
 
 		<div id="colorlib-main" class="bg-white">
 			<?php
-				include 'cadastroProduto.php';
+				/*include("config.php");*/
+
+				if (empty($_REQUEST)) {
+				}else{
+				switch ($_REQUEST['page']) {
+					case "consultalicenca":
+						include 'consultalicenca.php';
+						break;
+					case "restrict":
+						include 'login.php';
+						break;
+					default:
+						break;
+				}
+				}
+				
 			?>
 		</div><!-- END COLORLIB-MAIN -->
 	</div><!-- END COLORLIB-PAGE -->
