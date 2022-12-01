@@ -8227,7 +8227,7 @@ h1, h2, h3, h4, h5,
   @media (min-width: 1297px) {
     #colorlib-aside {
       width: 20%;
-      min-width: 20em; } }
+      min-width: 20%; } }
   @media (max-width: 1296px) {
     #colorlib-aside {
       width: 270px;
