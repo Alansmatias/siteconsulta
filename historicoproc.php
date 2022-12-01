@@ -8,17 +8,24 @@
     $qtd = $res->num_rows;
 
     if($qtd > 0){
-        print "<table class='table'>";
+        print "<table class='table table-hover table-striped table-bordered'>";
+            print "<tr>";
+            print "<th>Data da Atualização</td>";
+            print "<th>Status</td>";
+            print "</tr>";
         while($row = $res->fetch_object()){
             print "<tr>";
-            print "<td>" . $row->dataStatus . "</td>";
+            print "<td class='col-4'>" . $row->dataStatus . "</td>";
             print "<td>" . $row->status_processo. "</td>";
             print "</tr>";
         }
         print "</table>";
     }else{
         print"<p class='alert alert-danger'>Não encontrou resultados!</p>";
-    }
+    };
 
+    print "<a href='?page=consultalicenca'>
+        <button class='btn btn-primary'> Voltar</button>
+    </a>";
 
 ?>

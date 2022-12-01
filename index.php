@@ -19,8 +19,9 @@
 					<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="?page=consultalicenca"><i class="fa-brands fa-pagelines"></i> Licenciamento</a></li>
 		    		<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-solid fa-bullhorn"></i> Denúncias Ambientais</a>
 					<li style="white-space: nowrap; font-size: 1.1em"><a class="text-light" href="#"><i class="fa-solid fa-circle-info"></i> Info</a></li>
-					<li style="white-space: nowrap; font-size: 1.1em; margin-top: 20px;"><a class="text-light" href="?page=restrict"><i class="fa-solid fa-ban"></i> Acesso Restrito</a></li>
-					<li style="white-space: nowrap; font-size: 1.1em;"><a class="text-light" href="?page=novoprocesso">Novo Processo</a></li>
+					<li style="white-space: nowrap; font-size: 1.1em; margin-top: 30px;"><a class="text-light" href="?page=restrict"><i class="fa-solid fa-ban"></i> Acesso Restrito</a></li>
+					<li style="white-space: nowrap; font-size: 1.1em;"><a class="text-light" href="?page=novoprocesso"><i class="fa-solid fa-plus"></i> Novo Processo</a></li>
+					<li style="white-space: nowrap; font-size: 1.1em;"><a class="text-light" href="?page=altsituacao"><i class="fa-solid fa-clipboard"></i> Alt. Situação</a></li>
 
 
 
@@ -50,6 +51,12 @@
 						break;
 					case "salvar":
 						include 'salvarprocesso.php';
+						break;
+					case "historicoproc":
+						include 'historicoproc.php';
+						break;
+					case "altsituacao":
+						include 'altsituacao.php';
 						break;
 					default:
 						break;

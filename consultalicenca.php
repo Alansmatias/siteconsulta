@@ -2,7 +2,7 @@
 
 <h4 class="h4 col-md-12 text-center text-muted font-weight-bold" style="font-size: 1.2em;">Consulta de Processos de Licenciamento Ambiental</h4><br>
 
-<form class="needs-validation" novalidate>
+<form class="needs-validation" novalidate action="?page=historicoproc" method="POST">
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">N° do Processo</label>
