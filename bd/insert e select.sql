@@ -9,3 +9,5 @@ INSERT INTO tb_statusProcesso (tb_processo_id_processo, status_processo, dataSta
 VALUES (1, "segunda atualização","2022-11-30");
 
 select * from tb_statusProcesso;
+
+SELECT dataStatus, status_processo FROM tb_statusProcesso WHERE tb_processo_id_processo = 1;

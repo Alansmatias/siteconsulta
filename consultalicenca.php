@@ -6,7 +6,7 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">N° do Processo</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Digite o número do processo" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+      <input type="text" name="numprocesso" class="form-control" id="validationCustom01" placeholder="Digite o número do processo" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -31,21 +31,21 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Cidade</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" value="Viçosa do Ceará" disabled=""required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom04">Estado</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" value="Ceará" disabled="" required>
       <div class="invalid-feedback">
         Please provide a valid state.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">CEP</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" value="62300000" disabled="" required>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
